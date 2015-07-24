@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="fullscreen">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Capital Interiors
+    </title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+
+    <script src="../js/responsive-nav.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery.cover.js"></script>
+  </head>
+  <body>
+
+    <header class="masthead masthead-alt">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">Capital Interiors</a>
+      </h3>
+
+      <a href="#" class="nav-site-toggle" aria-hidden="false">Navigation</a>
+
+      <nav class="nav nav-site">
+        <ul>
+          <li><a class="is-active" href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="nav-language-toggle" aria-hidden="false">Eng</a>
+
+      <nav class="nav nav-language nav-collapse">
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">French</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="tiles tiles-fullscreen">
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-1.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Interior Design & Architectural Services</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-2.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Serene Knightsbridge House</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-3.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Stunning St James's Sanctuary</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-1.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Charming Chelsea Townhouse</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-2.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Contemporary Country House</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-3.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Beautiful Barbados Retreat</h2>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h3>Visit</h3>
+              <address>Capital Interiors Ltd
+              <br>46 Rochester Row
+              <br>London SW1P 1JU</address>
+            </div>
+            <div class="footer-col">
+              <h3>Contact</h3>
+              <p>+44 (0)207 828 6339
+              <br>+44 (0)754 324 0022
+              <br><a href="#">info@capitalinteriors.co.uk</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="baseline">
+        <div class="baseline-icons">
+          <a class="icon icon-facebook" href="#">Facebook</a>
+          <a class="icon icon-pinterest" href="#">Pinterest</a>
+        </div>
+        <p>© Capital Interiors Ltd 2015 | Company registration no: 1205828</p>
+      </div>
+    </footer>
+
+    <script>
+
+      var sitenav = responsiveNav(".nav-site", {
+        customToggle: ".nav-site-toggle"
+      });
+
+      var languagenav = responsiveNav(".nav-language", {
+        customToggle: ".nav-language-toggle"
+      });
+
+			(function($) {
+				$(document).ready(function() {
+					$(".cover-image").cover();
+				});
+			})(jQuery);
+
+    </script>
+
+  </body>
+</html>

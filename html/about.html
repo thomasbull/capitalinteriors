@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Capital Interiors
+    </title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+
+    <script src="../js/responsive-nav.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery.cover.js"></script>
+  </head>
+  <body>
+
+    <header class="masthead">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">Capital Interiors</a>
+      </h3>
+
+      <a href="#" class="nav-site-toggle" aria-hidden="false">Navigation</a>
+
+      <nav class="nav nav-site">
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a class="is-active" href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="nav-language-toggle" aria-hidden="false">Eng</a>
+
+      <nav class="nav nav-language nav-collapse">
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">French</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="tiles tiles-fixedheight">
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-1.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Our History</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-2.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Our Philosophy</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-3.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Our Team</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="intro">
+      <h1>About</h1>
+      <p>To find out more about  who we are and how we work, or if you'd like to talk to us about your project, please get in touch using the details at the bottom of the page.</p>
+    </div>
+
+    <section class="panel panel-rev">
+      <div class="panel-media">
+        <img class="cover-image" src="../img/dev/service-1.jpg" alt="">
+      </div>
+      <div class="panel-body">
+        <h2>Our History</h2>
+        <p>Founded in 1975, Capital Interiors specialises in luxury interior design services for private residential and commercial clients. Our extensive international experience spans intimate cottages in the UK, palatial residences in the Middle and Far East, sumptuous residences in the Caribbean and private corporate offices in Europe.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-media">
+        <img class="cover-image" src="../img/dev/service-2.jpg" alt="">
+      </div>
+      <div class="panel-body">
+        <h2>Our Philosophy</h2>
+        <p>Our business has grown mostly on reputation or through word-of-mouth recommendations. Each project benefits from our established approach of innovation, efficiency and attention to detail. We do not have a 'house style'. Instead, we confidently deliver our clients' requirements in their chosen style for each project. Our growth has been measured and calculated to provide and maintain a consistent and superior level of service to all of our clients on all projects.</p>
+      </div>
+    </section>
+
+    <section class="panel panel-rev">
+      <div class="panel-media">
+        <img class="cover-image" src="../img/dev/service-3.jpg" alt="">
+      </div>
+      <div class="panel-body">
+        <h2>Our Team</h2>
+        <p>We have a dedicated team with hundreds of collective years of specialised experience in all aspects of the delivery of unique homes and projects. In addition, we have developed valuable working relationships with leading professional practices in every field of expertise, enabling us to provide the best advice and service to our clients.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h3>Visit</h3>
+              <address>Capital Interiors Ltd
+              <br>46 Rochester Row
+              <br>London SW1P 1JU</address>
+            </div>
+            <div class="footer-col">
+              <h3>Contact</h3>
+              <p>+44 (0)207 828 6339
+              <br>+44 (0)754 324 0022
+              <br><a href="#">info@capitalinteriors.co.uk</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="baseline">
+        <div class="baseline-icons">
+          <a class="icon icon-facebook" href="#">Facebook</a>
+          <a class="icon icon-pinterest" href="#">Pinterest</a>
+        </div>
+        <p>© Capital Interiors Ltd 2015 | Company registration no: 1205828</p>
+      </div>
+    </footer>
+
+    <script>
+
+      var sitenav = responsiveNav(".nav-site", {
+        customToggle: ".nav-site-toggle"
+      });
+
+      var languagenav = responsiveNav(".nav-language", {
+        customToggle: ".nav-language-toggle"
+      });
+
+      (function($) {
+				$(document).ready(function() {
+					$(".cover-image").cover();
+				});
+			})(jQuery);
+
+    </script>
+
+  </body>
+</html>

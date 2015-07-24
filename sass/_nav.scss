@@ -1,0 +1,80 @@
+// Navigation
+//
+// Main site navigation.
+
+.nav-site {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.nav-site a {
+  color: #4a4a4a;
+
+  &:hover {
+    color: #9b9b9b;
+    text-decoration: none;
+  }
+
+  &.is-active {
+    color: #bc9f75;
+  }
+}
+
+.nav-toggle,
+.nav-site-toggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 34px;
+  height: 25px;
+  background-image: url("../img/burgernav.svg");
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+
+  @media (min-width: 40em) {
+    display: none;
+  }
+}
+
+@media (min-width: 40em) {
+  .nav-site {
+    text-align: center;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-site li {
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.nav-language-toggle {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding-right: 25px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/langarrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 40em) {
+    top: 20px;
+  }
+}

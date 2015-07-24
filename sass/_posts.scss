@@ -1,0 +1,45 @@
+// Posts
+
+.post {
+  padding: 15px 15px 30px 15px;
+}
+
+.post-title {
+  font-size: 18px;
+}
+
+.post-media {
+  margin-bottom: 32px;
+}
+
+.post-body img {
+  width: 100%;
+  margin-top: 26px;
+}
+
+@media (min-width: 40em) {
+  .post {
+    padding-top: 64px;
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post-title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+    font-size: 36px;
+  }
+
+  .post-body {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post-body img {
+    margin-top: 39px;
+  }
+}

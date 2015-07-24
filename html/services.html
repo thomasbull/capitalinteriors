@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Capital Interiors
+    </title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+
+    <script src="../js/responsive-nav.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery.cover.js"></script>
+  </head>
+  <body>
+
+    <header class="masthead">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">Capital Interiors</a>
+      </h3>
+
+      <a href="#" class="nav-site-toggle" aria-hidden="false">Navigation</a>
+
+      <nav class="nav nav-site">
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a class="is-active" href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="nav-language-toggle" aria-hidden="false">Eng</a>
+
+      <nav class="nav nav-language nav-collapse">
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">French</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="tiles tiles-fixedheight">
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-1.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Interior Design & Architectural Services</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-2.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Project Management & Turnkey Contracting</h2>
+        </div>
+      </a>
+      <a class="tile" href="#">
+        <img class="cover-image" src="../img/dev/tile-3.jpg" alt="image">
+        <div class="tile-content">
+          <h2>Bespoke Finishes & Exclusive Furniture Design</h2>
+        </div>
+      </a>
+    </div>
+
+    <div class="intro">
+      <h1>Services</h1>
+      <p>We offer a comprehensive range of services, from interior design and project management through to bespoke furniture design. Contact us using the details below to find out more about how we could help with your project.</p>
+    </div>
+
+    <section class="panel panel-rev">
+      <div class="panel-media">
+        <img class="cover-image" src="../img/dev/service-1.jpg" alt="">
+      </div>
+      <div class="panel-body">
+        <h2>Interior Design & Architectural Services</h2>
+        <p>Capital Interiors specialises in luxury properties and interiors for discerning clients. We have established an enviable reputation with our private clients and, in some instances, are working for the third generation of prominent families on both domestic and international projects.</p>
+        <p>Our proven experience covers all aspects of residential design, from cutting-edge apartments to English country houses. We pride ourselves on:</p>
+        <ul>
+          <li>Understanding and interpreting clients' requirements</li>
+          <li>Tailoring style</li>
+          <li>Efficient delivery and cost management</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-media">
+        <img class="cover-image" src="../img/dev/service-2.jpg" alt="">
+      </div>
+      <div class="panel-body">
+        <h2>Project Management & Turnkey Contracting</h2>
+        <p>We see our projects through from inception to completion. We can serve as your sole point of contact throughout the process, dealing with, for example:</p>
+        <ul>
+          <li>Securing planning permissions</li>
+          <li>Securing listed building consents</li>
+          <li>Managing contracts</li>
+          <li>Managing the professional team to oversee the entire project</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel panel-rev">
+      <div class="panel-media">
+        <img class="cover-image" src="../img/dev/service-3.jpg" alt="">
+      </div>
+      <div class="panel-body">
+        <h2>Bespoke Finishes & Exclusive Furniture Design</h2>
+        <p>In addition to offering a bespoke specialist joinery and fittings service, we arrange for the design and build of custom-made furniture. Close, long-established relationships with superior suppliers mean we can easily source the finest materials to create unique interiors with unparalled attention to detail. Some examples of furniture we have made for our clients include:</p>
+        <ul>
+          <li>Bespoke cabinetry</li>
+          <li>Custom-built wine cellar</li>
+          <li>Feature lighting</li>
+          <li>His and hers walk-in wardrobes</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h3>Visit</h3>
+              <address>Capital Interiors Ltd
+              <br>46 Rochester Row
+              <br>London SW1P 1JU</address>
+            </div>
+            <div class="footer-col">
+              <h3>Contact</h3>
+              <p>+44 (0)207 828 6339
+              <br>+44 (0)754 324 0022
+              <br><a href="#">info@capitalinteriors.co.uk</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="baseline">
+        <div class="baseline-icons">
+          <a class="icon icon-facebook" href="#">Facebook</a>
+          <a class="icon icon-pinterest" href="#">Pinterest</a>
+        </div>
+        <p>© Capital Interiors Ltd 2015 | Company registration no: 1205828</p>
+      </div>
+    </footer>
+
+    <script>
+
+      var sitenav = responsiveNav(".nav-site", {
+        customToggle: ".nav-site-toggle"
+      });
+
+      var languagenav = responsiveNav(".nav-language", {
+        customToggle: ".nav-language-toggle"
+      });
+
+      (function($) {
+				$(document).ready(function() {
+					$(".cover-image").cover();
+				});
+			})(jQuery);
+
+    </script>
+
+  </body>
+</html>

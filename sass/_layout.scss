@@ -1,0 +1,38 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.container {
+  max-width: 38rem;
+  padding-left:  1.5rem;
+  padding-right: 1.5rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+@media (min-width: 40em) {
+  .fullscreen,
+  .fullscreen body {
+    height: 100%;
+  }
+}
+
+.page-overview {
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: 40em) {
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.intro {
+  padding: 40px 15px;
+  text-align: center;
+  max-width: 624px;
+  margin-left: auto;
+  margin-right: auto;
+}
