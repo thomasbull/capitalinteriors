@@ -6,7 +6,111 @@
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   font-size: 15px;
+
+  top: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: #fdfdfd;
 }
+
+// new
+.nav-site ul {
+  padding: 10px 30px;
+}
+
+.nav-site a {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ededed;
+
+  &:after {
+    content: "";
+    float: right;
+    width: 11px;
+    height: 19px;
+    margin-top: 2px;
+    background-image: url("../../images/navarrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.nav-site li:last-child a {
+  border-bottom: 0;
+}
+
+.nav-site .is-active {
+  border-color: #bc9f75;
+}
+
+@media (min-width: 40em) {
+  .nav-site {
+    background-color: transparent;
+  }
+
+  .nav-site ul {
+    padding: 0;
+  }
+
+  .nav-site a {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+
+.nav-language {
+  top: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: #fdfdfd;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.nav-language ul {
+  padding: 10px 30px;
+}
+
+.nav-language a {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ededed;
+
+  &:after {
+    content: "";
+    float: right;
+    width: 11px;
+    height: 19px;
+    margin-top: 2px;
+    background-image: url("../../images/navarrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.nav-language li:last-child a {
+  border-bottom: 0;
+}
+
+.nav-language .is-active {
+  border-color: #bc9f75;
+}
+
+@media (min-width: 40em) {
+  .nav-language {
+    max-width: 376px;
+    right: 0;
+    background-color: rgba(253, 253, 253, 0.9);
+  }
+}
+// end new
 
 .nav-site a {
   color: #4a4a4a;
@@ -28,7 +132,7 @@
   left: 15px;
   width: 34px;
   height: 25px;
-  background-image: url("../img/burgernav.svg");
+  background-image: url("../../images/burgernav.svg");
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -70,7 +174,7 @@
     right: 0;
     width: 18px;
     height: 18px;
-    background-image: url("../img/langarrow.svg");
+    background-image: url("../../images/langarrow.svg");
     background-repeat: no-repeat;
   }
 

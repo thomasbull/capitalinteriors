@@ -22,16 +22,18 @@
 }
 
 .pagination-prev,
-.pagination-next {
+.pagination-next,
+a[rel="prev"],
+a[rel="next"] {
   font-size: 14px;
   text-decoration: underline;
 }
 
-.pagination-prev {
+.pagination-prev, a[rel="prev"] {
   float: left;
 }
 
-.pagination-next {
+.pagination-next, a[rel="next"] {
   float: right;
 }
 

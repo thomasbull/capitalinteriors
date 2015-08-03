@@ -29,6 +29,17 @@
   }
 }
 
+.page-contact {
+  background-image: url("../../images/dev/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-width: 40em) {
+    height: 100%;
+  }
+}
+
 .intro {
   padding: 40px 15px;
   text-align: center;

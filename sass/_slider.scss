@@ -1,0 +1,125 @@
+// Slider
+
+.wooslider {
+  position: relative;
+  border: none;
+  margin-bottom: 0 !important;
+}
+
+.slide {
+  height: 336px;
+}
+
+.wooslider-control-nav {
+  top: 50% !important;
+  z-index: 500 !important;
+}
+
+@media (min-width: 40em) {
+  .wooslider,
+  .wooslider-viewport,
+  .slides,
+  .slide {
+    height: 100%;
+  }
+}
+
+.slides,
+.wooslider-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 960px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.slide-title {
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 44px;
+  text-shadow: 2px 0 12px rgba(0, 0, 0, 0.7);
+
+  @media (min-width: 40em) {
+    font-size: 44px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.wooslider-prev,
+.wooslider-next {
+  width: 11px;
+  height: 17px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  overflow: hidden; // hide text
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.wooslider-prev {
+  left: 15px;
+  background-image: url("../../images/chevronleft.svg");
+
+  @media (min-width: 40em) {
+    left: 60px;
+  }
+}
+
+.wooslider-next {
+  right: 15px;
+  background-image: url("../../images/chevronright.svg");
+
+  @media (min-width: 40em) {
+    right: 60px;
+  }
+}
+
+.wooslider-project {}
+
+.wooslider-project .wooslider-prev,
+.wooslider-project .wooslider-next {
+  width: 50px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position: center center;
+}
+
+.wooslider-direction-nav a:before {
+  font-family: arial, sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  content: "";
+}
+
+.wooslider-direction-nav a.wooslider-next:before {
+  content: "";
+}

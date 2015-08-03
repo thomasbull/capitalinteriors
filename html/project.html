@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="fullscreen">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Capital Interiors
+    </title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+
+    <script src="../js/responsive-nav.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery.cover.js"></script>
+  </head>
+  <body>
+
+    <header class="masthead masthead-alt">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">Capital Interiors</a>
+      </h3>
+
+      <a href="#" class="nav-site-toggle" aria-hidden="false">Navigation</a>
+
+      <nav class="nav nav-site">
+        <ul>
+          <li><a class="is-active" href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="nav-language-toggle" aria-hidden="false">Eng</a>
+
+      <nav class="nav nav-language nav-collapse">
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">French</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="sidebar sidebar-project">
+      <div class="sidebar-body">
+        <h1 class="sidebar-title">Sophisticated Belgravia Residence</h1>
+        <p>Situated in the heart of Belgravia, Capital Interiors designed, managed and contracted this turn-key project, completing in the summer of 2014. The finished Grade II listed home incorporates a basement leisure area, a multi-level rear extension, terrace and landscaped garden, together with a complete refurbishment of the existing house. The interiors throughout combine traditional and contemporary styles, retaining the property's period features alongside clean modern-lines and state-of-the-art facilities.</p>
+      </div>
+      <div class="sidebar-foot">
+        <a class="btn btn-rev" href="#">Back</a>
+        <a class="btn btn-rev sidebar-toggle" href="#">Hide</a>
+      </div>
+    </div>
+
+    <div class="wooslider wooslider-project">
+      <div class="wooslider-viewport">
+        <ul class="slides">
+          <li class="slide">
+            <img class="cover-image" src="../img/dev/project.jpg" alt="WooSlider">
+          </li>
+        </ul>
+      </div>
+      <ul class="wooslider-direction-nav">
+        <li><a class="wooslider-prev" href="#">Previous</a></li>
+        <li><a class="wooslider-next" href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h3>Visit</h3>
+              <address>Capital Interiors Ltd
+              <br>46 Rochester Row
+              <br>London SW1P 1JU</address>
+            </div>
+            <div class="footer-col">
+              <h3>Contact</h3>
+              <p>+44 (0)207 828 6339
+              <br>+44 (0)754 324 0022
+              <br><a href="#">info@capitalinteriors.co.uk</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="baseline">
+        <div class="baseline-icons">
+          <a class="icon icon-facebook" href="#">Facebook</a>
+          <a class="icon icon-pinterest" href="#">Pinterest</a>
+        </div>
+        <p>© Capital Interiors Ltd 2015 | Company registration no: 1205828</p>
+      </div>
+    </footer>
+
+    <script>
+
+      var sitenav = responsiveNav(".nav-site", {
+        customToggle: ".nav-site-toggle"
+      });
+
+      var languagenav = responsiveNav(".nav-language", {
+        customToggle: ".nav-language-toggle"
+      });
+
+      (function($) {
+				$(document).ready(function() {
+					$(".cover-image").cover();
+				});
+			})(jQuery);
+
+    </script>
+
+  </body>
+</html>

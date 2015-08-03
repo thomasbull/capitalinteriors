@@ -2,9 +2,24 @@
 
 .btn {
   display: inline-block;
-  border: 1px solid #686868;
   padding: 8px 40px;
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 1.5;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #686868;
+  user-select: none;
+  outline: none;
+}
+
+.btn-rev {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-submit {
+  border-color: #979797;
 }

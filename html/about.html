@@ -18,14 +18,14 @@
   </head>
   <body>
 
-    <header class="masthead">
+    <header class="masthead masthead-alt">
       <h3 class="masthead-title">
         <a href="/" title="Home">Capital Interiors</a>
       </h3>
 
       <a href="#" class="nav-site-toggle" aria-hidden="false">Navigation</a>
 
-      <nav class="nav nav-site">
+      <nav class="nav nav-site nav-collapse">
         <ul>
           <li><a href="#">Projects</a></li>
           <li><a class="is-active" href="#">Services</a></li>
@@ -133,11 +133,13 @@
     <script>
 
       var sitenav = responsiveNav(".nav-site", {
-        customToggle: ".nav-site-toggle"
+        customToggle: ".nav-site-toggle",
+        openPos: "absolute"
       });
 
       var languagenav = responsiveNav(".nav-language", {
-        customToggle: ".nav-language-toggle"
+        customToggle: ".nav-language-toggle",
+        openPos: "absolute"
       });
 
       (function($) {

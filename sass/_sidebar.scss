@@ -1,0 +1,86 @@
+// Sidebar
+
+.sidebar {
+  padding: 30px 15px 55px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar-body {
+  height: 100%;
+//  overflow: scroll;
+}
+
+.sidebar-project {
+  position: absolute;
+  height: 336px;
+  z-index: 3;
+  text-align: left;
+}
+
+.sidebar-foot {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .sidebar {
+    position: absolute;
+    left: 0;
+    top: 62px;
+    bottom: 0;
+    width: 348px;
+    padding-bottom: 80px;
+    text-align: left;
+  }
+
+  .sidebar-title {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .sidebar-project {
+    height: auto;
+    transition: left 300ms;
+  }
+
+  .sidebar-project.is-closed {
+    left: -348px;
+  }
+
+  .sidebar-foot {
+    bottom: 40px;
+    text-align: left;
+  }
+
+  .sidebar-toggle {
+    display: block;
+    float: right;
+    border: 0;
+    text-align: right;
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -15px;
+      width: 6px;
+      height: 12px;
+      background-image: url("../../images/chevronleft.svg");
+      background-size: 6px 12px;
+    }
+  }
+}

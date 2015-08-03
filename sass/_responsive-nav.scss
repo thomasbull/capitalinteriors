@@ -14,7 +14,7 @@
 }
 
 .js .nav-collapse {
-  clip: rect(0 0 0 0);
+  //clip: rect(0 0 0 0);
   max-height: 0;
   position: absolute;
   display: block;
@@ -31,16 +31,12 @@
 .nav-language-toggle {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
   user-select: none;
 }
 
 @media screen and (min-width: 40em) {
   .js .nav-site.nav-collapse {
-    position: relative;
+    position: relative !important;
   }
   .js .nav-site.nav-collapse.closed {
     max-height: none;

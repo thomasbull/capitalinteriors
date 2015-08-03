@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="fullscreen">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      Capital Interiors
+    </title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
+
+    <script src="../js/responsive-nav.js"></script>
+  </head>
+  <body>
+
+    <header class="masthead masthead-alt">
+      <h3 class="masthead-title">
+        <a href="/" title="Home">Capital Interiors</a>
+      </h3>
+
+      <a href="#" class="nav-site-toggle" aria-hidden="false">Navigation</a>
+
+      <nav class="nav nav-site">
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a class="is-active" href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="nav-language-toggle" aria-hidden="false">Eng</a>
+
+      <nav class="nav nav-language nav-collapse">
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">French</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="page-contact">
+
+      <div class="sidebar">
+        <div class="sidebar-body">
+          <h1 class="sidebar-title">Contact</h1>
+          <p>To get in touch with us, use the enquiry form or the details below.</p>
+
+          <form class="form" id="form-contact">
+            <input type="text" class="field" id="form-contact-name" placeholder="Name">
+            <input type="email" class="field" id="form-contact-email" placeholder="me@example.com">
+            <input type="text" class="field" id="form-contact-phone" placeholder="Phone no.">
+            <textarea class="field" id="form-contact-message" placeholder="Message"></textarea>
+            <input type="submit" class="btn btn-submit" value="Submit">
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h3>Visit</h3>
+              <address>Capital Interiors Ltd
+              <br>46 Rochester Row
+              <br>London SW1P 1JU</address>
+            </div>
+            <div class="footer-col">
+              <h3>Contact</h3>
+              <p>+44 (0)207 828 6339
+              <br>+44 (0)754 324 0022
+              <br><a href="#">info@capitalinteriors.co.uk</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="baseline">
+        <div class="baseline-icons">
+          <a class="icon icon-facebook" href="#">Facebook</a>
+          <a class="icon icon-pinterest" href="#">Pinterest</a>
+        </div>
+        <p>© Capital Interiors Ltd 2015 | Company registration no: 1205828</p>
+      </div>
+    </footer>
+
+    <script>
+
+      var sitenav = responsiveNav(".nav-site", {
+        customToggle: ".nav-site-toggle"
+      });
+
+      var languagenav = responsiveNav(".nav-language", {
+        customToggle: ".nav-language-toggle"
+      });
+
+    </script>
+
+  </body>
+</html>
